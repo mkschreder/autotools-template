@@ -1,4 +1,5 @@
 // this uses default include directory passed as CFLAGS in the Makefile.am
+#include <stdio.h>
 #include "mylibrary.h"
 
 #ifdef MYEXTRAFEATURE

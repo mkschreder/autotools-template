@@ -16,4 +16,9 @@ myapp_SOURCES=\
 myapp_CFLAGS = -I$(abs_top_builddir)/include -I$(top_srcdir)/include -std=gnu99
 myapp_LDADD=-L$(abs_top_builddir)/src/.libs libmylibrary.la
 
+if ENABLE_MYEXTRAFEATURE
+myapp_CFLAGS+=-DMYEXTRAFEATURE
+endif
+
+
 

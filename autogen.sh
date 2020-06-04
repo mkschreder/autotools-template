@@ -1,5 +1,5 @@
 #!/bin/sh
 
-libtoolize
 automake --add-missing
+libtoolize
 autoreconf .
